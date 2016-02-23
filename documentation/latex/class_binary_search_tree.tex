@@ -1,0 +1,170 @@
+\hypertarget{class_binary_search_tree}{}\section{Binary\+Search\+Tree$<$ E $>$ Class Template Reference}
+\label{class_binary_search_tree}\index{Binary\+Search\+Tree$<$ E $>$@{Binary\+Search\+Tree$<$ E $>$}}
+
+
+Inheritance diagram for Binary\+Search\+Tree$<$ E $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_binary_search_tree__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Binary\+Search\+Tree$<$ E $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_binary_search_tree__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_binary_search_tree_ab2a7466f6faa5cd8aa5b95510f1abec1}{Binary\+Search\+Tree} ()
+\item 
+\hyperlink{class_binary_search_tree_a207e21194b5a7f5592ec176bab05fbaa}{Binary\+Search\+Tree} (Comparator$<$ E $>$ c)
+\item 
+boolean \hyperlink{class_binary_search_tree_aecf969906c0201b48e8930a5e3833b36}{contains} (E data)
+\item 
+void \hyperlink{class_binary_search_tree_a3a559cec2b77572e287bba2eea43a2ea}{add} (E data)
+\item 
+void \hyperlink{class_binary_search_tree_a8e90ad601540c44c53bfdb2b1e9b464c}{remove} (E data)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_binary_search_tree_af46a1a86813d1bdfe3f745bc3641391b}{compare} (E x, E y)
+\item 
+\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node} \hyperlink{class_binary_search_tree_ac6a71b51d00f3abe651eb14bbd5f2c59}{get\+Root} ()
+\item 
+void \hyperlink{class_binary_search_tree_a6fa21028fbf3da7d3b0c31354641284c}{set\+Root} (\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node}$<$ E $>$ node)
+\item 
+void \hyperlink{class_binary_search_tree_affe3b4c5e9e5e895e3e44c94de81b5b3}{rotate\+Left} (\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node}$<$ E $>$ n)
+\item 
+void \hyperlink{class_binary_search_tree_a69140db7c29fbc76c5d844350771cfe4}{rotate\+Right} (\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node}$<$ E $>$ n)
+\item 
+\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node}$<$ E $>$ \hyperlink{class_binary_search_tree_a799d83bd6d39d322f1839e61e3d23fc4}{predecessor} (\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node}$<$ E $>$ node)
+\item 
+\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node}$<$ E $>$ \hyperlink{class_binary_search_tree_af3164d82d7ba30c495634fceeff9acd5}{node\+Containing} (E data)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node}$<$ E $>$ \hyperlink{class_binary_search_tree_a5702657bf1d1f9d2bf0d6d9f19252735}{root} = null
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Comparator$<$ E $>$ \hyperlink{class_binary_search_tree_a2c599d52b3d0ec2c0da5c9ba1d8a905b}{comparator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A binary search tree class with insertion, removal and lookup. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Binary\+Search\+Tree@{Binary\+Search\+Tree}!Binary\+Search\+Tree@{Binary\+Search\+Tree}}
+\index{Binary\+Search\+Tree@{Binary\+Search\+Tree}!Binary\+Search\+Tree@{Binary\+Search\+Tree}}
+\subsubsection[{\texorpdfstring{Binary\+Search\+Tree()}{BinarySearchTree()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binary\+Search\+Tree}$<$ E $>$.{\bf Binary\+Search\+Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_binary_search_tree_ab2a7466f6faa5cd8aa5b95510f1abec1}{}\label{class_binary_search_tree_ab2a7466f6faa5cd8aa5b95510f1abec1}
+Constructs an empty B\+ST that can only accept Comparables as items. \index{Binary\+Search\+Tree@{Binary\+Search\+Tree}!Binary\+Search\+Tree@{Binary\+Search\+Tree}}
+\index{Binary\+Search\+Tree@{Binary\+Search\+Tree}!Binary\+Search\+Tree@{Binary\+Search\+Tree}}
+\subsubsection[{\texorpdfstring{Binary\+Search\+Tree(\+Comparator$<$ E $>$ c)}{BinarySearchTree(Comparator< E > c)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binary\+Search\+Tree}$<$ E $>$.{\bf Binary\+Search\+Tree} (
+\begin{DoxyParamCaption}
+\item[{Comparator$<$ E $>$}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{class_binary_search_tree_a207e21194b5a7f5592ec176bab05fbaa}{}\label{class_binary_search_tree_a207e21194b5a7f5592ec176bab05fbaa}
+Constructs a B\+ST that orders its items according to the given comparator. 
+
+\subsection{Member Function Documentation}
+\index{Binary\+Search\+Tree@{Binary\+Search\+Tree}!add@{add}}
+\index{add@{add}!Binary\+Search\+Tree@{Binary\+Search\+Tree}}
+\subsubsection[{\texorpdfstring{add(\+E data)}{add(E data)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Binary\+Search\+Tree}$<$ E $>$.add (
+\begin{DoxyParamCaption}
+\item[{E}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_binary_search_tree_a3a559cec2b77572e287bba2eea43a2ea}{}\label{class_binary_search_tree_a3a559cec2b77572e287bba2eea43a2ea}
+Adds a single data item to the tree. If there is already an item in the tree that compares equal to the item being inserted, it is \char`\"{}overwritten\char`\"{} by the new item. \index{Binary\+Search\+Tree@{Binary\+Search\+Tree}!compare@{compare}}
+\index{compare@{compare}!Binary\+Search\+Tree@{Binary\+Search\+Tree}}
+\subsubsection[{\texorpdfstring{compare(\+E x, E y)}{compare(E x, E y)}}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Binary\+Search\+Tree}$<$ E $>$.compare (
+\begin{DoxyParamCaption}
+\item[{E}]{x, }
+\item[{E}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_binary_search_tree_af46a1a86813d1bdfe3f745bc3641391b}{}\label{class_binary_search_tree_af46a1a86813d1bdfe3f745bc3641391b}
+\index{Binary\+Search\+Tree@{Binary\+Search\+Tree}!contains@{contains}}
+\index{contains@{contains}!Binary\+Search\+Tree@{Binary\+Search\+Tree}}
+\subsubsection[{\texorpdfstring{contains(\+E data)}{contains(E data)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf Binary\+Search\+Tree}$<$ E $>$.contains (
+\begin{DoxyParamCaption}
+\item[{E}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_binary_search_tree_aecf969906c0201b48e8930a5e3833b36}{}\label{class_binary_search_tree_aecf969906c0201b48e8930a5e3833b36}
+Returns whether or not the tree contains an object with the given value. \index{Binary\+Search\+Tree@{Binary\+Search\+Tree}!get\+Root@{get\+Root}}
+\index{get\+Root@{get\+Root}!Binary\+Search\+Tree@{Binary\+Search\+Tree}}
+\subsubsection[{\texorpdfstring{get\+Root()}{getRoot()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binary\+Tree\+Node} {\bf Binary\+Search\+Tree}$<$ E $>$.get\+Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_binary_search_tree_ac6a71b51d00f3abe651eb14bbd5f2c59}{}\label{class_binary_search_tree_ac6a71b51d00f3abe651eb14bbd5f2c59}
+Returns the root of the tree. \index{Binary\+Search\+Tree@{Binary\+Search\+Tree}!node\+Containing@{node\+Containing}}
+\index{node\+Containing@{node\+Containing}!Binary\+Search\+Tree@{Binary\+Search\+Tree}}
+\subsubsection[{\texorpdfstring{node\+Containing(\+E data)}{nodeContaining(E data)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binary\+Tree\+Node}$<$E$>$ {\bf Binary\+Search\+Tree}$<$ E $>$.node\+Containing (
+\begin{DoxyParamCaption}
+\item[{E}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_binary_search_tree_af3164d82d7ba30c495634fceeff9acd5}{}\label{class_binary_search_tree_af3164d82d7ba30c495634fceeff9acd5}
+A special helper method that returns the node containing an object that compares equal to the given object. This is used in both contains and remove. \index{Binary\+Search\+Tree@{Binary\+Search\+Tree}!predecessor@{predecessor}}
+\index{predecessor@{predecessor}!Binary\+Search\+Tree@{Binary\+Search\+Tree}}
+\subsubsection[{\texorpdfstring{predecessor(\+Binary\+Tree\+Node$<$ E $>$ node)}{predecessor(BinaryTreeNode< E > node)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binary\+Tree\+Node}$<$E$>$ {\bf Binary\+Search\+Tree}$<$ E $>$.predecessor (
+\begin{DoxyParamCaption}
+\item[{{\bf Binary\+Tree\+Node}$<$ E $>$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_binary_search_tree_a799d83bd6d39d322f1839e61e3d23fc4}{}\label{class_binary_search_tree_a799d83bd6d39d322f1839e61e3d23fc4}
+Returns the rightmost node in the left subtree. \index{Binary\+Search\+Tree@{Binary\+Search\+Tree}!remove@{remove}}
+\index{remove@{remove}!Binary\+Search\+Tree@{Binary\+Search\+Tree}}
+\subsubsection[{\texorpdfstring{remove(\+E data)}{remove(E data)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Binary\+Search\+Tree}$<$ E $>$.remove (
+\begin{DoxyParamCaption}
+\item[{E}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_binary_search_tree_a8e90ad601540c44c53bfdb2b1e9b464c}{}\label{class_binary_search_tree_a8e90ad601540c44c53bfdb2b1e9b464c}
+Removes the node containing the given value. Does nothing if there is no such node. \index{Binary\+Search\+Tree@{Binary\+Search\+Tree}!rotate\+Left@{rotate\+Left}}
+\index{rotate\+Left@{rotate\+Left}!Binary\+Search\+Tree@{Binary\+Search\+Tree}}
+\subsubsection[{\texorpdfstring{rotate\+Left(\+Binary\+Tree\+Node$<$ E $>$ n)}{rotateLeft(BinaryTreeNode< E > n)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Binary\+Search\+Tree}$<$ E $>$.rotate\+Left (
+\begin{DoxyParamCaption}
+\item[{{\bf Binary\+Tree\+Node}$<$ E $>$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_binary_search_tree_affe3b4c5e9e5e895e3e44c94de81b5b3}{}\label{class_binary_search_tree_affe3b4c5e9e5e895e3e44c94de81b5b3}
+Rotates left around the given node. \index{Binary\+Search\+Tree@{Binary\+Search\+Tree}!rotate\+Right@{rotate\+Right}}
+\index{rotate\+Right@{rotate\+Right}!Binary\+Search\+Tree@{Binary\+Search\+Tree}}
+\subsubsection[{\texorpdfstring{rotate\+Right(\+Binary\+Tree\+Node$<$ E $>$ n)}{rotateRight(BinaryTreeNode< E > n)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Binary\+Search\+Tree}$<$ E $>$.rotate\+Right (
+\begin{DoxyParamCaption}
+\item[{{\bf Binary\+Tree\+Node}$<$ E $>$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_binary_search_tree_a69140db7c29fbc76c5d844350771cfe4}{}\label{class_binary_search_tree_a69140db7c29fbc76c5d844350771cfe4}
+Rotates right around the given node. \index{Binary\+Search\+Tree@{Binary\+Search\+Tree}!set\+Root@{set\+Root}}
+\index{set\+Root@{set\+Root}!Binary\+Search\+Tree@{Binary\+Search\+Tree}}
+\subsubsection[{\texorpdfstring{set\+Root(\+Binary\+Tree\+Node$<$ E $>$ node)}{setRoot(BinaryTreeNode< E > node)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Binary\+Search\+Tree}$<$ E $>$.set\+Root (
+\begin{DoxyParamCaption}
+\item[{{\bf Binary\+Tree\+Node}$<$ E $>$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_binary_search_tree_a6fa21028fbf3da7d3b0c31354641284c}{}\label{class_binary_search_tree_a6fa21028fbf3da7d3b0c31354641284c}
+Makes the given node the new root of the tree. 
+
+\subsection{Member Data Documentation}
+\index{Binary\+Search\+Tree@{Binary\+Search\+Tree}!comparator@{comparator}}
+\index{comparator@{comparator}!Binary\+Search\+Tree@{Binary\+Search\+Tree}}
+\subsubsection[{\texorpdfstring{comparator}{comparator}}]{\setlength{\rightskip}{0pt plus 5cm}Comparator$<$E$>$ {\bf Binary\+Search\+Tree}$<$ E $>$.comparator\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_binary_search_tree_a2c599d52b3d0ec2c0da5c9ba1d8a905b}{}\label{class_binary_search_tree_a2c599d52b3d0ec2c0da5c9ba1d8a905b}
+Comparator used to order the items in the tree. If null, the natural order of the items will be used. \index{Binary\+Search\+Tree@{Binary\+Search\+Tree}!root@{root}}
+\index{root@{root}!Binary\+Search\+Tree@{Binary\+Search\+Tree}}
+\subsubsection[{\texorpdfstring{root}{root}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binary\+Tree\+Node}$<$E$>$ {\bf Binary\+Search\+Tree}$<$ E $>$.root = null\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_binary_search_tree_a5702657bf1d1f9d2bf0d6d9f19252735}{}\label{class_binary_search_tree_a5702657bf1d1f9d2bf0d6d9f19252735}
+Root of the tree. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_binary_search_tree_8java}{Binary\+Search\+Tree.\+java}\end{DoxyCompactItemize}

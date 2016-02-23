@@ -1,0 +1,285 @@
+\hypertarget{class_red_black_tree}{}\section{Red\+Black\+Tree Class Reference}
+\label{class_red_black_tree}\index{Red\+Black\+Tree@{Red\+Black\+Tree}}
+
+
+Inheritance diagram for Red\+Black\+Tree\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_red_black_tree__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Red\+Black\+Tree\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_red_black_tree__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_red_black_tree_1_1_node}{Node}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_red_black_tree_a1c9e5ed89408fceece587beaa50e6ab9}{Red\+Black\+Tree} ()
+\item 
+\hyperlink{class_red_black_tree_a7dfa5ea4748978ca6afa51fd6b208f4e}{Red\+Black\+Tree} (Comparator c)
+\item 
+void \hyperlink{class_red_black_tree_a907af3b35b794f5d9f9743f2d57d39c4}{add} (Object data)
+\item 
+void \hyperlink{class_red_black_tree_a8fdca1f2db448926f4b45eeac4c188b3}{remove} (Object data)
+\item 
+boolean \hyperlink{class_binary_search_tree_aecf969906c0201b48e8930a5e3833b36}{contains} (E data)
+\item 
+void \hyperlink{class_binary_search_tree_a3a559cec2b77572e287bba2eea43a2ea}{add} (E data)
+\item 
+void \hyperlink{class_binary_search_tree_a8e90ad601540c44c53bfdb2b1e9b464c}{remove} (E data)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_binary_search_tree_af46a1a86813d1bdfe3f745bc3641391b}{compare} (E x, E y)
+\item 
+\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node} \hyperlink{class_binary_search_tree_ac6a71b51d00f3abe651eb14bbd5f2c59}{get\+Root} ()
+\item 
+void \hyperlink{class_binary_search_tree_a6fa21028fbf3da7d3b0c31354641284c}{set\+Root} (\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node}$<$ E $>$ node)
+\item 
+void \hyperlink{class_binary_search_tree_affe3b4c5e9e5e895e3e44c94de81b5b3}{rotate\+Left} (\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node}$<$ E $>$ n)
+\item 
+void \hyperlink{class_binary_search_tree_a69140db7c29fbc76c5d844350771cfe4}{rotate\+Right} (\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node}$<$ E $>$ n)
+\item 
+\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node}$<$ E $>$ \hyperlink{class_binary_search_tree_a799d83bd6d39d322f1839e61e3d23fc4}{predecessor} (\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node}$<$ E $>$ node)
+\item 
+\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node}$<$ E $>$ \hyperlink{class_binary_search_tree_af3164d82d7ba30c495634fceeff9acd5}{node\+Containing} (E data)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node}$<$ E $>$ \hyperlink{class_binary_search_tree_a5702657bf1d1f9d2bf0d6d9f19252735}{root} = null
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_red_black_tree_a036603602c44b39f5698d65e15bae390}{adjust\+After\+Insertion} (\hyperlink{class_red_black_tree_1_1_node}{Node} n)
+\item 
+void \hyperlink{class_red_black_tree_ae4c27d37bc5f50805fbe6c0cf360476c}{adjust\+After\+Removal} (\hyperlink{class_red_black_tree_1_1_node}{Node} n)
+\item 
+Color \hyperlink{class_red_black_tree_ae251b6377f66dc42714a8e005d8604b9}{color\+Of} (\hyperlink{class_red_black_tree_1_1_node}{Node} n)
+\item 
+boolean \hyperlink{class_red_black_tree_acaeb373bc18fa0cd3dbff1bd851f4c5b}{is\+Red} (\hyperlink{class_red_black_tree_1_1_node}{Node} n)
+\item 
+boolean \hyperlink{class_red_black_tree_a10fc9057a3791318d26ceffa8ddbc7c2}{is\+Black} (\hyperlink{class_red_black_tree_1_1_node}{Node} n)
+\item 
+void \hyperlink{class_red_black_tree_a88e7d0ae71ac8469d0b943fe9d3cc455}{set\+Color} (\hyperlink{class_red_black_tree_1_1_node}{Node} n, Color c)
+\item 
+\hyperlink{class_red_black_tree_1_1_node}{Node} \hyperlink{class_red_black_tree_a0e0446d903d1396d17ec40140008c0d9}{parent\+Of} (\hyperlink{class_red_black_tree_1_1_node}{Node} n)
+\item 
+\hyperlink{class_red_black_tree_1_1_node}{Node} \hyperlink{class_red_black_tree_a9ee7b2c519829be30a064de63fc0e584}{grandparent\+Of} (\hyperlink{class_red_black_tree_1_1_node}{Node} n)
+\item 
+\hyperlink{class_red_black_tree_1_1_node}{Node} \hyperlink{class_red_black_tree_a456b791db3dfd9eb29bd917db098dc75}{sibling\+Of} (\hyperlink{class_red_black_tree_1_1_node}{Node} n)
+\item 
+\hyperlink{class_red_black_tree_1_1_node}{Node} \hyperlink{class_red_black_tree_a59dc634a00db096b2bca448d4b2d48fd}{left\+Of} (\hyperlink{class_red_black_tree_1_1_node}{Node} n)
+\item 
+\hyperlink{class_red_black_tree_1_1_node}{Node} \hyperlink{class_red_black_tree_aac1f4f93040b9ad9e57120fbbfefd9df}{right\+Of} (\hyperlink{class_red_black_tree_1_1_node}{Node} n)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Red\+Black\+Tree@{Red\+Black\+Tree}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\index{Red\+Black\+Tree@{Red\+Black\+Tree}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{Red\+Black\+Tree()}{RedBlackTree()}}]{\setlength{\rightskip}{0pt plus 5cm}Red\+Black\+Tree.\+Red\+Black\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_red_black_tree_a1c9e5ed89408fceece587beaa50e6ab9}{}\label{class_red_black_tree_a1c9e5ed89408fceece587beaa50e6ab9}
+\index{Red\+Black\+Tree@{Red\+Black\+Tree}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\index{Red\+Black\+Tree@{Red\+Black\+Tree}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{Red\+Black\+Tree(\+Comparator c)}{RedBlackTree(Comparator c)}}]{\setlength{\rightskip}{0pt plus 5cm}Red\+Black\+Tree.\+Red\+Black\+Tree (
+\begin{DoxyParamCaption}
+\item[{Comparator}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{class_red_black_tree_a7dfa5ea4748978ca6afa51fd6b208f4e}{}\label{class_red_black_tree_a7dfa5ea4748978ca6afa51fd6b208f4e}
+
+
+\subsection{Member Function Documentation}
+\index{Red\+Black\+Tree@{Red\+Black\+Tree}!add@{add}}
+\index{add@{add}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{add(\+Object data)}{add(Object data)}}]{\setlength{\rightskip}{0pt plus 5cm}void Red\+Black\+Tree.\+add (
+\begin{DoxyParamCaption}
+\item[{Object}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_red_black_tree_a907af3b35b794f5d9f9743f2d57d39c4}{}\label{class_red_black_tree_a907af3b35b794f5d9f9743f2d57d39c4}
+\index{Red\+Black\+Tree@{Red\+Black\+Tree}!add@{add}}
+\index{add@{add}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{add(\+E data)}{add(E data)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Binary\+Search\+Tree}$<$ E $>$.add (
+\begin{DoxyParamCaption}
+\item[{E}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inherited]}}\hypertarget{class_binary_search_tree_a3a559cec2b77572e287bba2eea43a2ea}{}\label{class_binary_search_tree_a3a559cec2b77572e287bba2eea43a2ea}
+Adds a single data item to the tree. If there is already an item in the tree that compares equal to the item being inserted, it is \char`\"{}overwritten\char`\"{} by the new item. \index{Red\+Black\+Tree@{Red\+Black\+Tree}!adjust\+After\+Insertion@{adjust\+After\+Insertion}}
+\index{adjust\+After\+Insertion@{adjust\+After\+Insertion}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{adjust\+After\+Insertion(\+Node n)}{adjustAfterInsertion(Node n)}}]{\setlength{\rightskip}{0pt plus 5cm}void Red\+Black\+Tree.\+adjust\+After\+Insertion (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_red_black_tree_a036603602c44b39f5698d65e15bae390}{}\label{class_red_black_tree_a036603602c44b39f5698d65e15bae390}
+\index{Red\+Black\+Tree@{Red\+Black\+Tree}!adjust\+After\+Removal@{adjust\+After\+Removal}}
+\index{adjust\+After\+Removal@{adjust\+After\+Removal}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{adjust\+After\+Removal(\+Node n)}{adjustAfterRemoval(Node n)}}]{\setlength{\rightskip}{0pt plus 5cm}void Red\+Black\+Tree.\+adjust\+After\+Removal (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_red_black_tree_ae4c27d37bc5f50805fbe6c0cf360476c}{}\label{class_red_black_tree_ae4c27d37bc5f50805fbe6c0cf360476c}
+\index{Red\+Black\+Tree@{Red\+Black\+Tree}!color\+Of@{color\+Of}}
+\index{color\+Of@{color\+Of}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{color\+Of(\+Node n)}{colorOf(Node n)}}]{\setlength{\rightskip}{0pt plus 5cm}Color Red\+Black\+Tree.\+color\+Of (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_red_black_tree_ae251b6377f66dc42714a8e005d8604b9}{}\label{class_red_black_tree_ae251b6377f66dc42714a8e005d8604b9}
+\index{Red\+Black\+Tree@{Red\+Black\+Tree}!compare@{compare}}
+\index{compare@{compare}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{compare(\+E x, E y)}{compare(E x, E y)}}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Binary\+Search\+Tree}$<$ E $>$.compare (
+\begin{DoxyParamCaption}
+\item[{E}]{x, }
+\item[{E}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\hypertarget{class_binary_search_tree_af46a1a86813d1bdfe3f745bc3641391b}{}\label{class_binary_search_tree_af46a1a86813d1bdfe3f745bc3641391b}
+\index{Red\+Black\+Tree@{Red\+Black\+Tree}!contains@{contains}}
+\index{contains@{contains}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{contains(\+E data)}{contains(E data)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean {\bf Binary\+Search\+Tree}$<$ E $>$.contains (
+\begin{DoxyParamCaption}
+\item[{E}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inherited]}}\hypertarget{class_binary_search_tree_aecf969906c0201b48e8930a5e3833b36}{}\label{class_binary_search_tree_aecf969906c0201b48e8930a5e3833b36}
+Returns whether or not the tree contains an object with the given value. \index{Red\+Black\+Tree@{Red\+Black\+Tree}!get\+Root@{get\+Root}}
+\index{get\+Root@{get\+Root}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{get\+Root()}{getRoot()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binary\+Tree\+Node} {\bf Binary\+Search\+Tree}$<$ E $>$.get\+Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\hypertarget{class_binary_search_tree_ac6a71b51d00f3abe651eb14bbd5f2c59}{}\label{class_binary_search_tree_ac6a71b51d00f3abe651eb14bbd5f2c59}
+Returns the root of the tree. \index{Red\+Black\+Tree@{Red\+Black\+Tree}!grandparent\+Of@{grandparent\+Of}}
+\index{grandparent\+Of@{grandparent\+Of}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{grandparent\+Of(\+Node n)}{grandparentOf(Node n)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node} Red\+Black\+Tree.\+grandparent\+Of (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_red_black_tree_a9ee7b2c519829be30a064de63fc0e584}{}\label{class_red_black_tree_a9ee7b2c519829be30a064de63fc0e584}
+\index{Red\+Black\+Tree@{Red\+Black\+Tree}!is\+Black@{is\+Black}}
+\index{is\+Black@{is\+Black}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{is\+Black(\+Node n)}{isBlack(Node n)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Red\+Black\+Tree.\+is\+Black (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_red_black_tree_a10fc9057a3791318d26ceffa8ddbc7c2}{}\label{class_red_black_tree_a10fc9057a3791318d26ceffa8ddbc7c2}
+\index{Red\+Black\+Tree@{Red\+Black\+Tree}!is\+Red@{is\+Red}}
+\index{is\+Red@{is\+Red}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{is\+Red(\+Node n)}{isRed(Node n)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Red\+Black\+Tree.\+is\+Red (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_red_black_tree_acaeb373bc18fa0cd3dbff1bd851f4c5b}{}\label{class_red_black_tree_acaeb373bc18fa0cd3dbff1bd851f4c5b}
+\index{Red\+Black\+Tree@{Red\+Black\+Tree}!left\+Of@{left\+Of}}
+\index{left\+Of@{left\+Of}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{left\+Of(\+Node n)}{leftOf(Node n)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node} Red\+Black\+Tree.\+left\+Of (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_red_black_tree_a59dc634a00db096b2bca448d4b2d48fd}{}\label{class_red_black_tree_a59dc634a00db096b2bca448d4b2d48fd}
+\index{Red\+Black\+Tree@{Red\+Black\+Tree}!node\+Containing@{node\+Containing}}
+\index{node\+Containing@{node\+Containing}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{node\+Containing(\+E data)}{nodeContaining(E data)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binary\+Tree\+Node}$<$E$>$ {\bf Binary\+Search\+Tree}$<$ E $>$.node\+Containing (
+\begin{DoxyParamCaption}
+\item[{E}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\hypertarget{class_binary_search_tree_af3164d82d7ba30c495634fceeff9acd5}{}\label{class_binary_search_tree_af3164d82d7ba30c495634fceeff9acd5}
+A special helper method that returns the node containing an object that compares equal to the given object. This is used in both contains and remove. \index{Red\+Black\+Tree@{Red\+Black\+Tree}!parent\+Of@{parent\+Of}}
+\index{parent\+Of@{parent\+Of}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{parent\+Of(\+Node n)}{parentOf(Node n)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node} Red\+Black\+Tree.\+parent\+Of (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_red_black_tree_a0e0446d903d1396d17ec40140008c0d9}{}\label{class_red_black_tree_a0e0446d903d1396d17ec40140008c0d9}
+\index{Red\+Black\+Tree@{Red\+Black\+Tree}!predecessor@{predecessor}}
+\index{predecessor@{predecessor}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{predecessor(\+Binary\+Tree\+Node$<$ E $>$ node)}{predecessor(BinaryTreeNode< E > node)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binary\+Tree\+Node}$<$E$>$ {\bf Binary\+Search\+Tree}$<$ E $>$.predecessor (
+\begin{DoxyParamCaption}
+\item[{{\bf Binary\+Tree\+Node}$<$ E $>$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\hypertarget{class_binary_search_tree_a799d83bd6d39d322f1839e61e3d23fc4}{}\label{class_binary_search_tree_a799d83bd6d39d322f1839e61e3d23fc4}
+Returns the rightmost node in the left subtree. \index{Red\+Black\+Tree@{Red\+Black\+Tree}!remove@{remove}}
+\index{remove@{remove}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{remove(\+Object data)}{remove(Object data)}}]{\setlength{\rightskip}{0pt plus 5cm}void Red\+Black\+Tree.\+remove (
+\begin{DoxyParamCaption}
+\item[{Object}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_red_black_tree_a8fdca1f2db448926f4b45eeac4c188b3}{}\label{class_red_black_tree_a8fdca1f2db448926f4b45eeac4c188b3}
+\index{Red\+Black\+Tree@{Red\+Black\+Tree}!remove@{remove}}
+\index{remove@{remove}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{remove(\+E data)}{remove(E data)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Binary\+Search\+Tree}$<$ E $>$.remove (
+\begin{DoxyParamCaption}
+\item[{E}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inherited]}}\hypertarget{class_binary_search_tree_a8e90ad601540c44c53bfdb2b1e9b464c}{}\label{class_binary_search_tree_a8e90ad601540c44c53bfdb2b1e9b464c}
+Removes the node containing the given value. Does nothing if there is no such node. \index{Red\+Black\+Tree@{Red\+Black\+Tree}!right\+Of@{right\+Of}}
+\index{right\+Of@{right\+Of}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{right\+Of(\+Node n)}{rightOf(Node n)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node} Red\+Black\+Tree.\+right\+Of (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_red_black_tree_aac1f4f93040b9ad9e57120fbbfefd9df}{}\label{class_red_black_tree_aac1f4f93040b9ad9e57120fbbfefd9df}
+\index{Red\+Black\+Tree@{Red\+Black\+Tree}!rotate\+Left@{rotate\+Left}}
+\index{rotate\+Left@{rotate\+Left}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{rotate\+Left(\+Binary\+Tree\+Node$<$ E $>$ n)}{rotateLeft(BinaryTreeNode< E > n)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Binary\+Search\+Tree}$<$ E $>$.rotate\+Left (
+\begin{DoxyParamCaption}
+\item[{{\bf Binary\+Tree\+Node}$<$ E $>$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\hypertarget{class_binary_search_tree_affe3b4c5e9e5e895e3e44c94de81b5b3}{}\label{class_binary_search_tree_affe3b4c5e9e5e895e3e44c94de81b5b3}
+Rotates left around the given node. \index{Red\+Black\+Tree@{Red\+Black\+Tree}!rotate\+Right@{rotate\+Right}}
+\index{rotate\+Right@{rotate\+Right}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{rotate\+Right(\+Binary\+Tree\+Node$<$ E $>$ n)}{rotateRight(BinaryTreeNode< E > n)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Binary\+Search\+Tree}$<$ E $>$.rotate\+Right (
+\begin{DoxyParamCaption}
+\item[{{\bf Binary\+Tree\+Node}$<$ E $>$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\hypertarget{class_binary_search_tree_a69140db7c29fbc76c5d844350771cfe4}{}\label{class_binary_search_tree_a69140db7c29fbc76c5d844350771cfe4}
+Rotates right around the given node. \index{Red\+Black\+Tree@{Red\+Black\+Tree}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{set\+Color(\+Node n, Color c)}{setColor(Node n, Color c)}}]{\setlength{\rightskip}{0pt plus 5cm}void Red\+Black\+Tree.\+set\+Color (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}}]{n, }
+\item[{Color}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_red_black_tree_a88e7d0ae71ac8469d0b943fe9d3cc455}{}\label{class_red_black_tree_a88e7d0ae71ac8469d0b943fe9d3cc455}
+\index{Red\+Black\+Tree@{Red\+Black\+Tree}!set\+Root@{set\+Root}}
+\index{set\+Root@{set\+Root}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{set\+Root(\+Binary\+Tree\+Node$<$ E $>$ node)}{setRoot(BinaryTreeNode< E > node)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Binary\+Search\+Tree}$<$ E $>$.set\+Root (
+\begin{DoxyParamCaption}
+\item[{{\bf Binary\+Tree\+Node}$<$ E $>$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\hypertarget{class_binary_search_tree_a6fa21028fbf3da7d3b0c31354641284c}{}\label{class_binary_search_tree_a6fa21028fbf3da7d3b0c31354641284c}
+Makes the given node the new root of the tree. \index{Red\+Black\+Tree@{Red\+Black\+Tree}!sibling\+Of@{sibling\+Of}}
+\index{sibling\+Of@{sibling\+Of}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{sibling\+Of(\+Node n)}{siblingOf(Node n)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node} Red\+Black\+Tree.\+sibling\+Of (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_red_black_tree_a456b791db3dfd9eb29bd917db098dc75}{}\label{class_red_black_tree_a456b791db3dfd9eb29bd917db098dc75}
+
+
+\subsection{Member Data Documentation}
+\index{Red\+Black\+Tree@{Red\+Black\+Tree}!root@{root}}
+\index{root@{root}!Red\+Black\+Tree@{Red\+Black\+Tree}}
+\subsubsection[{\texorpdfstring{root}{root}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binary\+Tree\+Node}$<$E$>$ {\bf Binary\+Search\+Tree}$<$ E $>$.root = null\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\hypertarget{class_binary_search_tree_a5702657bf1d1f9d2bf0d6d9f19252735}{}\label{class_binary_search_tree_a5702657bf1d1f9d2bf0d6d9f19252735}
+Root of the tree. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_red_black_tree_8java}{Red\+Black\+Tree.\+java}\end{DoxyCompactItemize}

@@ -1,0 +1,182 @@
+\hypertarget{interface_binary_tree_node}{}\section{Binary\+Tree\+Node$<$ E $>$ Interface Template Reference}
+\label{interface_binary_tree_node}\index{Binary\+Tree\+Node$<$ E $>$@{Binary\+Tree\+Node$<$ E $>$}}
+
+
+Inheritance diagram for Binary\+Tree\+Node$<$ E $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{interface_binary_tree_node__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+interface \hyperlink{interface_binary_tree_node_1_1_visitor}{Visitor}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+E \hyperlink{interface_binary_tree_node_a5a4d14c6bbf570de73e0f1a43d98d672}{get\+Data} ()
+\item 
+void \hyperlink{interface_binary_tree_node_accbc98503745f10ebe72ea78c9a15669}{set\+Data} (E data)
+\item 
+\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node}$<$ E $>$ \hyperlink{interface_binary_tree_node_a4a13b77afd729f88fc58fb9fa03c2c1e}{get\+Parent} ()
+\item 
+\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node}$<$ E $>$ \hyperlink{interface_binary_tree_node_a4ec154631f398146d0216be244aa80a3}{get\+Left} ()
+\item 
+void \hyperlink{interface_binary_tree_node_a746af1f08a685aaff3306f588fc0a5d0}{set\+Left} (\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node}$<$ E $>$ child)
+\item 
+\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node}$<$ E $>$ \hyperlink{interface_binary_tree_node_adaa5e760f918e25857153371cb7e1e7e}{get\+Right} ()
+\item 
+void \hyperlink{interface_binary_tree_node_a373da8799e503a1881b6569b3ac9a03f}{set\+Right} (\hyperlink{interface_binary_tree_node}{Binary\+Tree\+Node}$<$ E $>$ child)
+\item 
+void \hyperlink{interface_binary_tree_node_aca847d1cf4992837220a2f2ae2232a1d}{remove\+From\+Parent} ()
+\item 
+void \hyperlink{interface_binary_tree_node_a663a53b5d44f02f42c62aa8adaee09a1}{traverse\+Preorder} (\hyperlink{interface_binary_tree_node_1_1_visitor}{Visitor} visitor)
+\item 
+void \hyperlink{interface_binary_tree_node_a0a676acf35bdf91a294fd3169936c515}{traverse\+Postorder} (\hyperlink{interface_binary_tree_node_1_1_visitor}{Visitor} visitor)
+\item 
+void \hyperlink{interface_binary_tree_node_aec8c26794367445b02a5dcf5194c0df5}{traverse\+Inorder} (\hyperlink{interface_binary_tree_node_1_1_visitor}{Visitor} visitor)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple interface for binary trees. An empty binary tree is represented with the value null; a non-\/empty tree by its root node. 
+
+\subsection{Member Function Documentation}
+\index{Binary\+Tree\+Node@{Binary\+Tree\+Node}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!Binary\+Tree\+Node@{Binary\+Tree\+Node}}
+\subsubsection[{\texorpdfstring{get\+Data()}{getData()}}]{\setlength{\rightskip}{0pt plus 5cm}E {\bf Binary\+Tree\+Node}$<$ E $>$.get\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_binary_tree_node_a5a4d14c6bbf570de73e0f1a43d98d672}{}\label{interface_binary_tree_node_a5a4d14c6bbf570de73e0f1a43d98d672}
+Returns the data stored in this node. 
+
+Implemented in \hyperlink{class_linked_binary_tree_node_a7c2f77ce2d6b5b56854f3e21229cf7be}{Linked\+Binary\+Tree\+Node$<$ E $>$}.
+
+\index{Binary\+Tree\+Node@{Binary\+Tree\+Node}!get\+Left@{get\+Left}}
+\index{get\+Left@{get\+Left}!Binary\+Tree\+Node@{Binary\+Tree\+Node}}
+\subsubsection[{\texorpdfstring{get\+Left()}{getLeft()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binary\+Tree\+Node}$<$E$>$ {\bf Binary\+Tree\+Node}$<$ E $>$.get\+Left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_binary_tree_node_a4ec154631f398146d0216be244aa80a3}{}\label{interface_binary_tree_node_a4ec154631f398146d0216be244aa80a3}
+Returns the left child of this node, or null if it does not have one. 
+
+Implemented in \hyperlink{class_linked_binary_tree_node_aff92f2fe5a957710d6510efba6c12a24}{Linked\+Binary\+Tree\+Node$<$ E $>$}.
+
+\index{Binary\+Tree\+Node@{Binary\+Tree\+Node}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!Binary\+Tree\+Node@{Binary\+Tree\+Node}}
+\subsubsection[{\texorpdfstring{get\+Parent()}{getParent()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binary\+Tree\+Node}$<$E$>$ {\bf Binary\+Tree\+Node}$<$ E $>$.get\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_binary_tree_node_a4a13b77afd729f88fc58fb9fa03c2c1e}{}\label{interface_binary_tree_node_a4a13b77afd729f88fc58fb9fa03c2c1e}
+Returns the parent of this node, or null if this node is a root. 
+
+Implemented in \hyperlink{class_linked_binary_tree_node_a67681eb2b9d5aa1522fe7f5ad0a43435}{Linked\+Binary\+Tree\+Node$<$ E $>$}.
+
+\index{Binary\+Tree\+Node@{Binary\+Tree\+Node}!get\+Right@{get\+Right}}
+\index{get\+Right@{get\+Right}!Binary\+Tree\+Node@{Binary\+Tree\+Node}}
+\subsubsection[{\texorpdfstring{get\+Right()}{getRight()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Binary\+Tree\+Node}$<$E$>$ {\bf Binary\+Tree\+Node}$<$ E $>$.get\+Right (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_binary_tree_node_adaa5e760f918e25857153371cb7e1e7e}{}\label{interface_binary_tree_node_adaa5e760f918e25857153371cb7e1e7e}
+Returns the right child of this node, or null if it does not have one. 
+
+Implemented in \hyperlink{class_linked_binary_tree_node_a0d0979d4274a78b5e50cc67bbe67f6dd}{Linked\+Binary\+Tree\+Node$<$ E $>$}.
+
+\index{Binary\+Tree\+Node@{Binary\+Tree\+Node}!remove\+From\+Parent@{remove\+From\+Parent}}
+\index{remove\+From\+Parent@{remove\+From\+Parent}!Binary\+Tree\+Node@{Binary\+Tree\+Node}}
+\subsubsection[{\texorpdfstring{remove\+From\+Parent()}{removeFromParent()}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Binary\+Tree\+Node}$<$ E $>$.remove\+From\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_binary_tree_node_aca847d1cf4992837220a2f2ae2232a1d}{}\label{interface_binary_tree_node_aca847d1cf4992837220a2f2ae2232a1d}
+Removes this node, and all its descendants, from whatever tree it is in. Does nothing if this node is a root. 
+
+Implemented in \hyperlink{class_linked_binary_tree_node_a8ad111432e731268c2a2f2b60b716c3c}{Linked\+Binary\+Tree\+Node$<$ E $>$}.
+
+\index{Binary\+Tree\+Node@{Binary\+Tree\+Node}!set\+Data@{set\+Data}}
+\index{set\+Data@{set\+Data}!Binary\+Tree\+Node@{Binary\+Tree\+Node}}
+\subsubsection[{\texorpdfstring{set\+Data(\+E data)}{setData(E data)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Binary\+Tree\+Node}$<$ E $>$.set\+Data (
+\begin{DoxyParamCaption}
+\item[{E}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_binary_tree_node_accbc98503745f10ebe72ea78c9a15669}{}\label{interface_binary_tree_node_accbc98503745f10ebe72ea78c9a15669}
+Modifies the data stored in this node. 
+
+Implemented in \hyperlink{class_linked_binary_tree_node_ada54f092b78cc359f1ba41a3ac02ab80}{Linked\+Binary\+Tree\+Node$<$ E $>$}.
+
+\index{Binary\+Tree\+Node@{Binary\+Tree\+Node}!set\+Left@{set\+Left}}
+\index{set\+Left@{set\+Left}!Binary\+Tree\+Node@{Binary\+Tree\+Node}}
+\subsubsection[{\texorpdfstring{set\+Left(\+Binary\+Tree\+Node$<$ E $>$ child)}{setLeft(BinaryTreeNode< E > child)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Binary\+Tree\+Node}$<$ E $>$.set\+Left (
+\begin{DoxyParamCaption}
+\item[{{\bf Binary\+Tree\+Node}$<$ E $>$}]{child}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_binary_tree_node_a746af1f08a685aaff3306f588fc0a5d0}{}\label{interface_binary_tree_node_a746af1f08a685aaff3306f588fc0a5d0}
+Removes child from its current parent and inserts it as the left child of this node. If this node already has a left child it is removed.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & if the child is an ancestor of this node, since that would make a cycle in the tree. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{class_linked_binary_tree_node_ad99561d122c83c710d2e16acf6a78016}{Linked\+Binary\+Tree\+Node$<$ E $>$}.
+
+\index{Binary\+Tree\+Node@{Binary\+Tree\+Node}!set\+Right@{set\+Right}}
+\index{set\+Right@{set\+Right}!Binary\+Tree\+Node@{Binary\+Tree\+Node}}
+\subsubsection[{\texorpdfstring{set\+Right(\+Binary\+Tree\+Node$<$ E $>$ child)}{setRight(BinaryTreeNode< E > child)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Binary\+Tree\+Node}$<$ E $>$.set\+Right (
+\begin{DoxyParamCaption}
+\item[{{\bf Binary\+Tree\+Node}$<$ E $>$}]{child}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_binary_tree_node_a373da8799e503a1881b6569b3ac9a03f}{}\label{interface_binary_tree_node_a373da8799e503a1881b6569b3ac9a03f}
+Removes child from its current parent and inserts it as the right child of this node. If this node already has a right child it is removed. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & if the child is an ancestor of this node, since that would make a cycle in the tree. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{class_linked_binary_tree_node_acf93e554937b4465b206145c2ad3cc25}{Linked\+Binary\+Tree\+Node$<$ E $>$}.
+
+\index{Binary\+Tree\+Node@{Binary\+Tree\+Node}!traverse\+Inorder@{traverse\+Inorder}}
+\index{traverse\+Inorder@{traverse\+Inorder}!Binary\+Tree\+Node@{Binary\+Tree\+Node}}
+\subsubsection[{\texorpdfstring{traverse\+Inorder(\+Visitor visitor)}{traverseInorder(Visitor visitor)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Binary\+Tree\+Node}$<$ E $>$.traverse\+Inorder (
+\begin{DoxyParamCaption}
+\item[{{\bf Visitor}}]{visitor}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_binary_tree_node_aec8c26794367445b02a5dcf5194c0df5}{}\label{interface_binary_tree_node_aec8c26794367445b02a5dcf5194c0df5}
+Visits the nodes in this tree in inorder. 
+
+Implemented in \hyperlink{class_linked_binary_tree_node_a7e0193ab373cea38b1144f0d13618e2e}{Linked\+Binary\+Tree\+Node$<$ E $>$}.
+
+\index{Binary\+Tree\+Node@{Binary\+Tree\+Node}!traverse\+Postorder@{traverse\+Postorder}}
+\index{traverse\+Postorder@{traverse\+Postorder}!Binary\+Tree\+Node@{Binary\+Tree\+Node}}
+\subsubsection[{\texorpdfstring{traverse\+Postorder(\+Visitor visitor)}{traversePostorder(Visitor visitor)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Binary\+Tree\+Node}$<$ E $>$.traverse\+Postorder (
+\begin{DoxyParamCaption}
+\item[{{\bf Visitor}}]{visitor}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_binary_tree_node_a0a676acf35bdf91a294fd3169936c515}{}\label{interface_binary_tree_node_a0a676acf35bdf91a294fd3169936c515}
+Visits the nodes in this tree in postorder. 
+
+Implemented in \hyperlink{class_linked_binary_tree_node_ae0280ad10046815632a7f41f4fbfc7c4}{Linked\+Binary\+Tree\+Node$<$ E $>$}.
+
+\index{Binary\+Tree\+Node@{Binary\+Tree\+Node}!traverse\+Preorder@{traverse\+Preorder}}
+\index{traverse\+Preorder@{traverse\+Preorder}!Binary\+Tree\+Node@{Binary\+Tree\+Node}}
+\subsubsection[{\texorpdfstring{traverse\+Preorder(\+Visitor visitor)}{traversePreorder(Visitor visitor)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Binary\+Tree\+Node}$<$ E $>$.traverse\+Preorder (
+\begin{DoxyParamCaption}
+\item[{{\bf Visitor}}]{visitor}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_binary_tree_node_a663a53b5d44f02f42c62aa8adaee09a1}{}\label{interface_binary_tree_node_a663a53b5d44f02f42c62aa8adaee09a1}
+Visits the nodes in this tree in preorder. 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_binary_tree_node_8java}{Binary\+Tree\+Node.\+java}\end{DoxyCompactItemize}
